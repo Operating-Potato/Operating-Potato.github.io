@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(80, 86, 156);
+    font-family: sans-serif;
+}
+a {
+    color: #d4d3ff;
+}
+hr {
+    width: 100%;
+    margin-left: 0%
+}
+.container {
+padding: 50px;
+padding-top:25px;
+color:white;
+}
