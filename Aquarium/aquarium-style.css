@@ -27,6 +27,8 @@ h1 {
         padding: 25px;
         margin: 25px;
         width: 500px;
+        flex-basis: 500px;
+        max-height: 500px;
         text-align: center;
         border-radius: 10px;
         ul {
@@ -42,25 +44,32 @@ h1 {
     padding: 25px;
     margin: 25px;
     width: 500px;
-    min-width: 140px;
-    height: 452px;
+    height: auto;
+    max-height: 500px;
     border-radius: 10px;
     column-gap: 10px;
     row-gap: 10px;
     overflow: auto;
-    scrollbar-width: none;
-    scrollbar-gutter: ;
+    scrollbar-width: thin;
 }
 .responsive {
     float: left;
     width: 32%;
 }
+@media only screen and (max-width: 1500px) {
+    .intro-paragraph {
+        max-height: auto;
+    }
+
 @media only screen and (max-width: 625px) {
+    .intro-paragraph {
+        max-height:fit-content;
+    }
     .responsive {
       width: 48%;
     }
-  }  
-@media only screen and (max-width: 370px) {
+}  
+@media only screen and (max-width: 380px) {
     .responsive {
       width: 100%;
     }
