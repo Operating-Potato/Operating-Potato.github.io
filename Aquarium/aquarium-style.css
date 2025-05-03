@@ -1,6 +1,6 @@
 body {
     background-image: url("pompanos.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
