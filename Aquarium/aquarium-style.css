@@ -44,7 +44,6 @@ h1 {
     padding: 25px;
     margin: 25px;
     width: 500px;
-    height: auto;
     max-height: 500px;
     border-radius: 10px;
     column-gap: 10px;
@@ -53,17 +52,18 @@ h1 {
     scrollbar-width: thin;
 }
 .responsive {
+    background-color: blue;
     float: left;
     width: 32%;
 }
 @media only screen and (max-width: 1500px) {
     .intro-paragraph {
-        max-height: auto;
-    }
+        max-height:fit-content;
+    }    
+}
 
 @media only screen and (max-width: 625px) {
     .intro-paragraph {
-        max-height:fit-content;
     }
     .responsive {
       width: 48%;
