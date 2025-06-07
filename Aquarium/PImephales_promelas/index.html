@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="../../favicon.png">
+        <title>Fathead minnow</title>
+        <!--stylesheet is here, not exterrnal-->
+        <style>
+            body {
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+            background-attachment: fixed;
+            font-family: monospace;
+            }
+            h1 {
+                text-align: center;
+            }
+            .container {
+                 display: flex;
+                justify-content: center;
+                flex-flow: row;
+                flex-wrap: wrap;
+                align-content: center;
+                flex-basis: 100%;
+            }
+            .image {
+                display: flex;
+                flex-flow: row;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                width: 100%;
+                flex-basis: 100%;
+                max-width: 1100px;
+                justify-content: center;
+                justify-self: center;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+            .text {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-content: center;
+                border-color:white;
+                border-width: 3px;
+                border-style:groove;
+                padding: 25px;
+                margin: 15px;
+                flex-basis: 100%;
+                max-width: 1000px;
+                text-align: center;
+                color: white;
+                border-radius: 10px;
+                    ul {
+                        text-align: left;
+                    }
+            }
+            hr {
+                width: 75%;
+            }
+
+            /*navigation bar*/
+            .nav_container {
+                justify-items: left;
+                top: 10px;
+            }
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                top:0;
+                margin-bottom: 10px;
+                width:fit-content;
+                height: auto;
+                text-align: left;
+                align-content:center;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+            .box {
+                align-content: center;
+                height: 30px;
+                width: fit-content;
+                margin-top: 10px;
+                padding-top: 0%;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+            }
+
+            a.navlink {
+                text-decoration: none;
+                color: rgb(50,50,50);
+            }
+
+            #home:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/favicon.png");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #games:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/Turning_right.png");
+                background-color: white;
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #photos:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/Photos/Images/Scooter.jpeg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #article:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/Article/Tetra.jpg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #aquarium {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/aquarium_navbar.png");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="../" style="color: #d4d3ff; text-decoration: none;">&larr; Go back</a></p>
+        <div class="nav_container">
+            <div class="navbar">
+                <a href="/" class="navlink"><div class="box" id="home">
+                    <p>Home</p>
+                </div></a>
+                <a href="/game/" class="navlink"><div class="box" id="games">
+                    <p>Games</p>
+                </div></a>
+                <a href="/Photos/" class="navlink"><div class="box" id="photos">
+                    <p>Photos</p>
+                </div></a>
+                <a href="/Article/" class="navlink"><div class="box" id="article">
+                    <p>Article</p>
+                </div></a>
+                <a href="/Aquarium/" class="navlink"><div class="box" id="aquarium">
+                    <p><b>Aquarium</b></p>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <a href="Fathead minnow.gif" target="blank"><img src="Fathead minnow.gif"></a>
+            </div>
+            <br>
+            <br>
+            <div class="text">
+                <h3><i>Pimephales promelas</i></h3>
+                <p><i>"The breeding males form small, bony bumps called tubercles on their snouts. These serve no apparent purpose but may be a sign of beauty or prestige in the fish world."</i></p>
+                <p style="text-align: left; font-size: 10px; color: gray;">Fathead Minnow — Pimephales promelas.  Montana Field Guide.  Montana Natural Heritage Program and Montana Fish, Wildlife and Parks.  Retrieved on April 30, 2025, from https://FieldGuide.mt.gov/speciesDetail.aspx?elcode=afcjb32020</p>
+            </div>
+        </div>
+    </body>
+</html>
