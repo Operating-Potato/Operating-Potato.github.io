@@ -92,6 +92,7 @@ h1 {
 }
 .navbar {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     top:0;
     margin-bottom: 10px;

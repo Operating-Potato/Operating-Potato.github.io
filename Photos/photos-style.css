@@ -1,8 +1,7 @@
 body {
     background-color: rgb(10, 35, 55);
-}
-h1 {
-    color: #ffffff;
+    color:#ffffff;
+    font-family: serif;
 }
 .row {
     display: flex;
