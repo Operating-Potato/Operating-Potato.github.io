@@ -63,6 +63,7 @@ a.navlink {
         url("/favicon.png");
     background-size: cover;
     background-position: center;
+    background-color: white;
     color: white;
 }
 
@@ -82,6 +83,7 @@ a.navlink {
         url("/Photos/Images/Scooter.jpeg");
     background-size: cover;
     background-position: center;
+    background-color: white;
     color: white;
 }
 
@@ -91,6 +93,7 @@ a.navlink {
         url("/Article/Tetra.jpg");
     background-size: cover;
     background-position: center;
+    background-color: white;
     color: white;
 }
 
@@ -100,5 +103,6 @@ a.navlink {
         url("/aquarium_navbar.png");
     background-size: cover;
     background-position: center;
+    background-color: white;
     color: white;
 }

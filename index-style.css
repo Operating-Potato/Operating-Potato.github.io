@@ -9,11 +9,13 @@ img {
 
 /*navigation bar*/
 .nav_container {
-    justify-items: center;
+    display:flex;
+    justify-content: center;
     position: sticky;
     top: 10px;
 }
 .navbar {
+    justify-self: center;
     display: flex;
     flex-wrap: wrap;
     top:0;
@@ -22,10 +24,6 @@ img {
     height: auto;
     background-color: lightgray;
     background-image: linear-gradient(rgb(230,230,230), rgb(150,150,150));
-    text-align: left;
-    align-content:center;
-    align-items: center;
-    justify-content: center;
 
     box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
     border-radius:10px;
@@ -52,6 +50,7 @@ a.navlink {
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/favicon.png");
     background-size: cover;
+    background-color: white;
     background-position: center;
     color: white;
 }
@@ -71,6 +70,7 @@ a.navlink {
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/Photos/Images/Scooter.jpeg");
     background-size: cover;
+    background-color: white;
     background-position: center;
     color: white;
 }
@@ -80,6 +80,7 @@ a.navlink {
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/Article/Tetra.jpg");
     background-size: cover;
+    background-color: white;
     background-position: center;
     color: white;
 }
@@ -89,6 +90,7 @@ a.navlink {
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/aquarium_navbar.png");
     background-size: cover;
+    background-color: white;
     background-position: center;
     color: white;
 }
