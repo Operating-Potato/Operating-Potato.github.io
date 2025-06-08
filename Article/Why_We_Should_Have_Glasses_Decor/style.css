@@ -21,6 +21,12 @@ body {
     width: 100%;
 }
 
+.text {
+    p {
+        text-indent: 30px;
+    }
+}
+
 /*navigation bar*/
 .nav_container {
     justify-items: left;
@@ -88,8 +94,8 @@ a.navlink {
 
 #article {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/Article/Tetra.jpg");
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("/articles_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
