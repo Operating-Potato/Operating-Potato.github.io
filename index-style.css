@@ -7,6 +7,42 @@ img {
     border-radius: 10px;
 }
 
+.languages {
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+
+    
+}
+
+.lang_option {
+    background-image: linear-gradient(rgba(210, 240, 255, 0.5), rgb(200, 220, 255, 0.5));
+    font-size: 100%;
+
+    margin: 10px;
+
+    width: 100px;
+    height: 50px;
+
+    align-content: center;
+    text-align: center;
+
+    border-radius: 10px;
+    border-style:solid;
+}
+
+.lang_option:hover {
+    font-size: 150%;
+    height: 150%;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 /*navigation bar*/
 .nav_container {
     display:flex;
@@ -49,7 +85,7 @@ a.navlink {
 #home {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/favicon.png");
+        url("/navbar/home_navbar.png");
     background-size: cover;
     background-color: white;
     background-position: center;
@@ -59,7 +95,7 @@ a.navlink {
 #games:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/Turning_right.png");
+        url("/navbar/games_navbar.png");
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -69,7 +105,7 @@ a.navlink {
 #photos:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/Photos/Images/Scooter.jpeg");
+        url("/navbar/photos_navbar.jpg");
     background-size: cover;
     background-color: white;
     background-position: center;
@@ -79,7 +115,7 @@ a.navlink {
 #article:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("/articles_navbar.png");
+        url("/navbar/articles_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -89,7 +125,7 @@ a.navlink {
 #aquarium:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/aquarium_navbar.png");
+        url("/navbar/aquarium_navbar.png");
     background-size: cover;
     background-color: white;
     background-position: center;

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="/favicon.png">
+        <title>Fathead minnow</title>
+        <meta charset="utf-8"> 
+        <!--stylesheet is here, not exterrnal-->
+        <style>
+            body {
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+            background-attachment: fixed;
+            font-family: monospace;
+            }
+            h1 {
+                text-align: center;
+            }
+            .container {
+                 display: flex;
+                justify-content: center;
+                flex-flow: row;
+                flex-wrap: wrap;
+                align-content: center;
+                flex-basis: 100%;
+            }
+            .image {
+                display: flex;
+                flex-flow: row;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                width: 100%;
+                flex-basis: 100%;
+                max-width: 1100px;
+                justify-content: center;
+                justify-self: center;
+            }
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+            .text {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-content: center;
+                border-color:white;
+                border-width: 3px;
+                border-style:groove;
+                padding: 25px;
+                margin: 15px;
+                flex-basis: 100%;
+                max-width: 1000px;
+                text-align: center;
+                color: white;
+                border-radius: 10px;
+                    ul {
+                        text-align: left;
+                    }
+            }
+            hr {
+                width: 75%;
+            }
+
+            /*navigation bar*/
+            .nav_container {
+                justify-items: left;
+                top: 10px;
+            }
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                top:0;
+                margin-bottom: 10px;
+                width:fit-content;
+                height: auto;
+                text-align: left;
+                align-content:center;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+            .box {
+                align-content: center;
+                height: 30px;
+                width: fit-content;
+                margin-top: 10px;
+                padding-top: 0%;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            a.navlink {
+                text-decoration: none;
+                color: rgb(150, 150, 150);
+            }
+
+            #home:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/home_navbar.png");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #games:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/games_navbar.png");
+                background-color: white;
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #photos:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/photos_navbar.jpg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+            #article:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url("/navbar/articles_navbar.png");
+                background-size: cover;
+                background-position: center;
+                background-color: white;
+                color: white;
+            }
+
+
+            #aquarium {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/aquarium_navbar.png");
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="../" style="color: #d4d3ff; text-decoration: none;">&larr; 回去</a></p>
+        <div class="nav_container">
+                     <div class="navbar">
+                    <a href="/zh/" class="navlink"><div class="box" id="home">
+                        <p>首页</p>
+                    </div></a>
+                    <a href="/zh/game/" class="navlink"><div class="box" id="games">
+                        <p>游戏</p>
+                    </div></a>
+                    <a href="/zh/Photos/" class="navlink"><div class="box" id="photos">
+                        <p>照片</p>
+                    </div></a>
+                    <a href="/zh/Article/" class="navlink"><div class="box" id="article">
+                        <p><b>游戏</b></p>
+                    </div></a>
+                    <a href="/zh/Aquarium/" class="navlink"><div class="box" id="aquarium">
+                        <p>水族馆</p>
+                    </div></a>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <a href="Fathead minnow.gif" target="blank"><img src="Fathead minnow.gif" alt="Animated pixel art of a fathead minnow swimming."></a>
+            </div>
+            <br>
+            <br>
+            <div class="text">
+                <h3><i>Pimephales promelas</i></h3>
+                <p><i>有一天，我在抓小龙虾的时候抓到了一条这种鱼，并把它和小龙虾一起放进了桶里。
+                    但是小龙虾抓到了小鱼。
+                </i></p>
+            </div>
+        </div>
+    </body>
+</html>

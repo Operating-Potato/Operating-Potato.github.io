@@ -59,7 +59,7 @@ a.navlink {
 #home:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/favicon.png");
+        url("/navbar/home_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -69,7 +69,7 @@ a.navlink {
 #games:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/Turning_right.png");
+        url("/navbar/games_navbar.png");
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -79,7 +79,7 @@ a.navlink {
 #photos:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/Photos/Images/Scooter.jpeg");
+        url("/navbar/photos_navbar.jpg");
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -89,7 +89,7 @@ a.navlink {
 #article {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("/articles_navbar.png");
+        url("/navbar/articles_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -99,7 +99,7 @@ a.navlink {
 #aquarium:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/aquarium_navbar.png");
+        url("/navbar/aquarium_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
