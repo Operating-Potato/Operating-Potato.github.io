@@ -29,6 +29,7 @@ img {
 
     border-radius: 10px;
     border-style:solid;
+    border-width: 2px;
 }
 
 .lang_option:hover {
@@ -38,6 +39,7 @@ img {
 
 a:link {
     text-decoration: none;
+    color:;
 }
 a:hover {
     text-decoration: underline;
