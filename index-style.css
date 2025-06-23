@@ -29,6 +29,7 @@ img {
 
     border-radius: 10px;
     border-style:solid;
+    border-width: 2px;
 }
 
 .lang_option:hover {
@@ -36,11 +37,17 @@ img {
     height: 150%;
 }
 
-a:link {
+.languages a {
     text-decoration: none;
     color: blue;
-    border-width: 2px;
+}
 
+.languages a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;

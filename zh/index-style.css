@@ -37,9 +37,17 @@ img {
     height: 150%;
 }
 
-a:link {
+.languages a {
     text-decoration: none;
-    color:;
+    color: blue;
+}
+
+.languages a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;

@@ -86,6 +86,7 @@ a.navlink {
 /*everything else*/
 body {
     background-color: rgb(220,220,220);
+    font-family: serif;
 }
 .container {
     display:flex;
