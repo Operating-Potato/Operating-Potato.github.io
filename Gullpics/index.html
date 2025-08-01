@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gull Pics!</title>
+        <link rel="icon" href="favicon.jpg">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                <script>
+            function randomNumber() {
+                return imageNumber =  Math.floor(Math.random() * 96)   
+            }
+        </script>
+    </head>
+    <body>
+
+        <div class="container" style="background-image: url('2.jpg');">
+            <p><a href="../" style="color: rgb(0,0,255); text-decoration: none; float: left; margin-top: 5px; margin-left: 5px;">&larr; Go back</a></p>
+            <div class="section">
+                <h1>Gull Pics!</h1>
+            </div>
+            <div class="section">
+                <img id="bird-now" src="2.jpg">
+            </div>
+            <div class="section">
+                <button onclick="let number = randomNumber(); document.getElementById('bird-now').src=number + '.jpg';">
+                    Give me a gull!
+                </button>
+            </div>
+        </div>
+        <div class="container" id="information">
+            <div class="infosection">
+                <h2>Information</h2>
+                <p>Press the button to see a randomly selected image of a gull. There's 96 in total!
+                </p>
+                <p>Most of them are photos taken between 2023 and 2025, in various locations in North America, as well as two drawings.</p>
+                <h2>Featured species:</h2>
+                <ul>
+                    <li>Ring-billed Gull (<i>Larus delawarensis</i>)</li>
+                    <li>Franklin's Gull (<i>Leucophaeus pipixcan</i>)</li>
+                    <li>California Gull (<i>Larus californicus</i>)</li>
+                    <li>Western Gull (<i>Larus occidentalis</i>)</li>
+                    <li>Heermann's Gull (<i>Larus heermanni</i>)</li>
+                    <li>American Herring Gull (<i>Larus smithsonianus</i>)</li>
+                    <li>Statue at a Vancouver International Airport playground structure</li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </body>
+</html>

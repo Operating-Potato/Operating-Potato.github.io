@@ -1,0 +1,77 @@
+
+
+body {
+    font-family: monospace;
+    background-image: linear-gradient(to bottom,rgb(231, 231, 231), #d3d3ea, rgb(226, 226, 255));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(226, 226, 255);
+    min-height: 100vw;
+}
+
+img {
+    object-fit: cover;
+    width:700px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    text-shadow: 10px, 20px;
+    filter: drop-shadow(0 5px 5px);
+}
+
+@media only screen and (max-width: 720px) {
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-family:monospace;
+    margin: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, 
+    rgb(0, 115, 255), rgb(0,50,190));
+    color:white;
+    border-style: none;
+    box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);  
+}
+
+button:active {
+    transform: scale(0.9);
+    background-image: linear-gradient(to bottom right, 
+    rgb(0,50,190), rgb(0, 115, 255));
+    box-shadow: 
+        inset -2px -2px 3px rgb(0 0 0 / 0.6),
+        inset 2px 2px 3px rgb(255 255 255 / 0.6);        
+}
+
+.container {
+    text-align: center;
+
+    background-size: 33.3333%;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#section {
+    text-align: center;
+}
+
+.section {
+    padding: 10px;
+}
+
+#information {
+    display:flex;
+    justify-content: center;
+}
+
+.infosection {
+    max-width: 700px;
+    text-align: left !important;
+}
