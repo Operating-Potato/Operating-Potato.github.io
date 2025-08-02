@@ -1,12 +1,20 @@
 
-
+html {
+    height: 100%;
+}
 body {
     font-family: monospace;
-    background-image: linear-gradient(to bottom,rgb(231, 231, 231), #d3d3ea, rgb(226, 226, 255));
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: rgb(226, 226, 255);
-    min-height: 100vw;
+    background-image: url('2.jpg');
+        background-size: 200px;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    height: 100%;
+    display:flex;
+    flex-flow:column;
+
 }
 
 img {
@@ -15,21 +23,25 @@ img {
     aspect-ratio: 1/1;
     border-radius: 20px;
     text-shadow: 10px, 20px;
-    filter: drop-shadow(0 5px 5px);
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.7));
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 740px) {
     img {
-        width: 100%;
+        max-width: 100%;
         aspect-ratio: 1/1;
     }
+    body {
+        background-size: 33.33%;
+    }
 }
+
 
 button {
     width: 200px;
     height: 50px;
     font-family:monospace;
-    margin: 20px;
+    margin-top: 20px;
     border-radius: 20px;
     background-image: linear-gradient(to bottom right, 
     rgb(0, 115, 255), rgb(0,50,190));
@@ -37,41 +49,62 @@ button {
     border-style: none;
     box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 0.6),
-    inset -2px -2px 3px rgb(0 0 0 / 0.6);  
+    inset -2px -2px 3px rgb(0 0 0 / 0.6),
+    0 5px 5px;
 }
 
 button:active {
     transform: scale(0.9);
     background-image: linear-gradient(to bottom right, 
     rgb(0,50,190), rgb(0, 115, 255));
-    box-shadow: 
-        inset -2px -2px 3px rgb(0 0 0 / 0.6),
-        inset 2px 2px 3px rgb(255 255 255 / 0.6);        
 }
+
+
 
 .container {
     text-align: center;
+    margin-top:0;
 
-    background-size: 33.3333%;
-    background-position: center top;
-    background-repeat: repeat;
-    background-attachment: fixed;
+
 }
+#button {
+    margin-bottom:20px;
 
-#section {
-    text-align: center;
 }
 
 .section {
-    padding: 10px;
-}
+    padding: 20px;
+    padding-top:0;
+    padding-bottom:0;
 
+}
+#main {
+
+    height:fit-content;
+
+
+}
 #information {
+    
     display:flex;
+    flex-flow:row;
     justify-content: center;
+    background-image: linear-gradient(to bottom,rgba(231, 231, 231,0.8), rgba(211, 211, 234,0.8), rgba(226, 226, 255,0.8));
+    backdrop-filter: blur(3px);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    flex-grow:1;
+
+
 }
 
 .infosection {
+
     max-width: 700px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 0;
     text-align: left !important;
+
 }
