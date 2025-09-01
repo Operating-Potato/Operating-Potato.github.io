@@ -4,6 +4,7 @@
 body {
     background-color: aliceblue;
     font-family: monospace;
+
 }
 
 img {
@@ -20,14 +21,12 @@ img {
 
 .lang_option {
     background-image: linear-gradient(rgba(210, 240, 255, 0.5), rgb(200, 220, 255, 0.5));
-    font-size: 100%;
 
     margin: 10px;
 
     width: 100px;
     height: 50px;
 
-    align-content: center;
     text-align: center;
 
     border-radius: 10px;
@@ -35,14 +34,14 @@ img {
     border-width: 2px;
 }
 
-.lang_option:hover {
-    font-size: 150%;
-    height: 150%;
-}
-
-.languages a {
+a .lang_option {
     text-decoration: none;
     color: blue;
+    border-color:blue;
+}
+
+.lang_option:hover {
+        padding:5px;
 }
 
 .languages a:hover {

@@ -8,15 +8,15 @@
     color: white;
 }
 
-#games:hover {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/games_navbar.png");
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
+            #games:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/games_navbar.png");
+                background-color: white;
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
 
 #photos:hover {
     background-image: 
