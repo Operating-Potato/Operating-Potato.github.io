@@ -1,0 +1,35 @@
+@import url(/navbar/navbar_main.css);
+@import url(/navbar/page_highlights/games.css);
+
+body {
+    background-color: rgb(80, 86, 156);
+    font-family: sans-serif;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+a {
+    color: #d4d3ff;
+}
+
+hr {
+    width: 100%;
+    margin-left: 0%;
+            color:white;
+}
+
+.wrapper {
+    display:flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.container {
+padding: 50px;
+padding-top:25px;
+color:white;
+width: 100%;
+max-width: 1000px;
+}

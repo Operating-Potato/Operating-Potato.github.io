@@ -1,3 +1,6 @@
+@import url(/navbar/navbar_main.css);
+@import url(/navbar/page_highlights/aquarium.css);
+
 body {
     background-image: url("pompanos.jpg");
     background-repeat: repeat;
@@ -81,93 +84,4 @@ h1 {
     width: 100%;
     vertical-align: middle;
     height: auto
-}
-
-/*navigation bar*/
-.nav_container {
-    display:flex;
-    justify-content: center;
-    position: sticky;
-    top: 10px;
-}
-.navbar {
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    top:0;
-    margin-bottom: 10px;
-    width:fit-content;
-    height: auto;
-    background-color: lightgray;
-    background-image: linear-gradient(rgb(230,230,230), rgb(150,150,150));
-
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
-    border-radius:10px;
-}
-
-.box {
-    align-content: center;
-    height: 50px;
-    width: fit-content;
-    padding-top: 0%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    border-radius:10px;
-}
-
-a.navlink {
-    text-decoration: none;
-    color: rgb(50,50,50);
-}
-
-#home:hover {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/home_navbar.png");
-    background-size: cover;
-    background-color: white;
-    background-position: center;
-    color: white;
-}
-
-#games:hover {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/games_navbar.png");
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-#photos:hover {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/photos_navbar.jpg");
-    background-size: cover;
-    background-color: white;
-    background-position: center;
-    color: white;
-}
-
-#article:hover {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("/navbar/articles_navbar.png");
-    background-size: cover;
-    background-position: center;
-    background-color: white;
-    color: white;
-}
-
-#aquarium {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/aquarium_navbar.png");
-    background-size: cover;
-    background-color: white;
-    background-position: center;
-    color: white;
 }

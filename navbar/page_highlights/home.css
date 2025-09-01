@@ -1,61 +1,4 @@
-body {
-    background-color: rgb(80, 86, 156);
-    font-family: sans-serif;
-}
-a {
-    color: #d4d3ff;
-}
-hr {
-    width: 100%;
-    margin-left: 0%
-}
-.container {
-padding: 50px;
-padding-top:25px;
-color:white;
-}
-
-/*navigation bar*/
-.nav_container {
-    display:flex;
-    justify-content: center;
-    position: sticky;
-    top: 10px;
-    font-family: monospace;
-}
-.navbar {
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    top:0;
-    margin-bottom: 10px;
-    width:fit-content;
-    height: auto;
-    background-color: lightgray;
-    background-image: linear-gradient(rgb(230,230,230), rgb(150,150,150));
-
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
-    border-radius:10px;
-}
-
-.box {
-    align-content: center;
-    height: 50px;
-    width: fit-content;
-    padding-top: 0%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    border-radius:10px;
-}
-
-a.navlink {
-    text-decoration: none;
-    color: rgb(50,50,50);
-}
-
-#home:hover {
+#home {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/navbar/home_navbar.png");
@@ -65,7 +8,7 @@ a.navlink {
     color: white;
 }
 
-#games {
+#games:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
         url("/navbar/games_navbar.png");
