@@ -72,15 +72,16 @@
             }
             .navbar {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
+                overflow-x:scroll;
                 top:0;
                 margin-bottom: 10px;
-                width:fit-content;
+                width:100%;
                 height: auto;
                 text-align: left;
                 align-content:center;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
 
 
             }
@@ -149,6 +150,11 @@
                 background-position: center;
                 color: white;
             }
+
+            #settings:hover {
+                background-color: rgb(25, 25, 30);
+                color:white;
+            }            
         </style>
     </head>
     <body>
@@ -170,6 +176,9 @@
                 <a href="/Aquarium/" class="navlink"><div class="box" id="aquarium">
                     <p><b>Aquarium</b></p>
                 </div></a>
+                <a href="/Settings" class="navlink"><div class="box" id="settings">
+                    <p>Settings</p>
+                </div></a>               
             </div>
         </div>
 

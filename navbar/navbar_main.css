@@ -1,3 +1,13 @@
+:root {
+    --sidebar-colour: rgba(211,211,211,0.7);
+    --sidebar-gradient: linear-gradient(rgba(230,230,230,0.5), rgba(150,150,150,0.5));
+    --text-colour: rgb(50,50,50);
+    --title-colour: blue;
+}
+
+
+
+/*padding for rest of page*/
 .main {
     margin-left: 220px;
     margin-right: 20px;
@@ -11,6 +21,8 @@
 .nav_container {
     z-index: 1;
 
+    flex-flow: column;
+
     margin: 0px 10px 0px 0px;
 
     display:flex;
@@ -19,37 +31,42 @@
     left:0;
     width: 200px;
     height: 100%;
-        overflow-x: scroll;
-    background-color: rgba(211,211,211,0.7);
-    background-image: linear-gradient(rgba(230,230,230,0.5), rgba(150,150,150,0.5));
+    flex-wrap: nowrap;
+
+
+    background-color: var(--sidebar-colour);
+    background-image: var(--sidebar-gradient);
+
+
     backdrop-filter: blur(5px);
     box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
     border-radius: 0 20px 20px 0;
     font-family: monospace !important;
 }
 .navbar {
-    justify-content: flex-start;
+    align-content: flex-start;
     display: flex;
     flex-flow: column;
     flex-wrap: nowrap;
     top:0;
-    width:100%;
+    max-width:200px;
     height: auto;
 }
 
 .box {
     align-content: center;
     height: 50px;
-    width: calc(100% - 2em);
+    max-width: 200px;
     padding-top: 0%;
     padding-left:2em;
+
     text-align: start;
 
 }
 
 a.navlink {
     text-decoration: none !important;
-    color: rgb(50,50,50);
+    color: var(--text-colour);
 }
 
 #site_title {
@@ -57,9 +74,27 @@ a.navlink {
 }
 
 #site_title a {
-    color:blue;
+    color: var(--title-colour);
     text-decoration: none;
 }
+
+.sublink_container {
+    padding-bottom:10px;
+}
+
+#sublink {
+    height:25px;
+    max-width:200px;
+    padding-left:3em;
+    padding-bottom:10px;
+    padding-top:0;
+    align-content: center;
+
+}
+
+#sublink:hover {font-weight:bold;}
+
+
 
 
 @media only screen and (max-width: 720px) {
@@ -70,6 +105,7 @@ a.navlink {
     }
     .nav_container {
         position: fixed;
+        flex-flow:row;
         bottom:0;
         left:0;
         width:100%;
@@ -79,13 +115,15 @@ a.navlink {
         margin:0
     }
     .navbar {
-        justify-content: center;
         flex-flow:row;
+        flex-wrap:nowrap;
+        flex-shrink:0;
         top:0;
-        width:100%;
+        width:100% !important;
+        max-width:none;
+        padding:0;
     }
     .box {
-        align-content: center;
         width: fit-content;
         text-align: center;
         padding: 0 10px 0 10px;
@@ -93,6 +131,7 @@ a.navlink {
 
     #sublink {display:none;}
     #site_title {display:none;}
+    #sublink_container {display:none;}
 }
 
 
@@ -104,6 +143,71 @@ a.navlink {
 }
 
 
-#sublink {text-indent: 1em each-line; height:25px;margin:0 0 10px 0;}
+/*dark mode*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sidebar-colour: rgba(0,0,0,0.7);
+        --sidebar-gradient: linear-gradient(rgba(80,80,80,0.5), rgba(0,0,0,0.5));
+        --text-colour: white;
+        --title-colour: #d4d3ff;
+    }
+}
 
-#sublink:hover {font-weight:bold;}
+
+
+
+
+#home:hover {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("/navbar/home_navbar.png");
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    color: white;
+}
+
+            #games:hover {
+                background-image: 
+                    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url("/navbar/games_navbar.png");
+                background-color: white;
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+
+#photos:hover {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("/navbar/photos_navbar.jpg");
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    color: white;
+}
+
+#article:hover {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("/navbar/articles_navbar.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    color: white;
+}
+
+#aquarium:hover {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("/navbar/aquarium_navbar.png");
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    color: white;
+}
+
+#settings:hover {
+    background-color: rgb(25, 25, 30);
+    color:white;
+}

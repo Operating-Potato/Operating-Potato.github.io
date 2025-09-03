@@ -25,96 +25,6 @@
                 <audio id="sound2" src="sounds/1.wav"></audio>
                 <audio id="sound3" src="sounds/2.wav"></audio>
 
-                <!--button scripts-->
-                <script>
-                    function randomNumberUpTo(limit) {
-                        return Math.floor(Math.random() * limit) + 1   
-                    }
-
-                    let soundId;
-                    let audio = document.getElementById('sound' + soundId);
-
-                    //list of gull facts
-                    const factList = 
-                        [
-                        "This line is supposed to be an offset for the random number generator. it should not appear on the page.",
-
-                        "#1: Did you know that there are around 54 species of gull in the world?",
-                        "#2: Most gulls nest on bare ground, with a few exceptions.",
-                        "#3: Gulls are related to terns and skimmers. All three are in the taxonomic family Laridae.",
-                        "#4: Gull chicks are very fluffy and polka-dotted.",
-                        "#5: Gulls are found on every continent. Yes that includes a little bit of Antarctica.",
-                        "#6: The word <q>Seagull</q> is used as a casual term, rather than a formal one.",
-                        "#7: The long wings of a gull help it glide efficiently.",
-                        "#8: All gulls until recently were classified in a single genus. Many have since been split into different genera.",
-                        "#9: Many gulls are generalists, and can survive in a large variety of habitats ranging from wetlands, to coasts, and even deserts.",
-                        "#10: Did you know that gulls can drink saltwater, expelling salt through their nostrils?",
-                        "#11: Gull colonies vary in size from a few pairs, to several hundred thousand birds!",
-                        "#12: Plumage differs between gull species. Common patterns include white with gray wings, or white with gray wings and a black head.",
-                        "#13: When trying to identify gulls, useful distinctions include bill patterns, darkness of the wings, eye colour, size, and leg colour.",
-                        "#14: Some species are found in parking lots frequently.",
-                        "#15: Despite what the above image may imply, juvenile gulls do not fill the niche of coconuts.",
-                        "#16: The arctic-dwelling Ivory Gull (not pictured) is completely white.",
-                        "#17: The Lava Gull (not pictured) is almost completely grey.",
-                        "#18: Gull hatchlings are precocial, meaning they can move about as soon as they hatch, making them more like ducklings rather than songbird nestlings.",
-                        "#19: Gulls will sometimes steal food from other birds.",
-                        "#20: Although the word is in limited use today, gulls were known as <q>mews</q> in English.",
-                        "#21: The Bonarparte's Gull (not pictured) builds its nest on tree branches in the boreal forest.",
-                        "#22: Kittiwakes (not pictured) nest on cliffs.",
-                        "#23: The smallest gull in the world is the Little Gull.",
-                        "#24: The largest gull in the world is the Great Black-backed Gull.",
-                        "#25: Gulls are able to eat a large variety of foods, including fish, invertebrates, food scavenged or stolen from humans, washed up dead stuff, and even live whale blubber.",
-                        "#26: The Ring-billed Gull (pictured) has the binomial name <i>Larus delawarensis</i>, the latter word referring to the Delaware River.",
-                        "#27: The white part in the droppings of gulls (and most other birds) is uric acid. The actual fecal matter is the brown dots in the middle. This reduces dehydration.",
-                        "#28: Ross's Gulls (not pictured) in breeding plumage are pink with grey wings.",
-                        "#29: Most gulls are active during the day, except for the Swallow-tailed Gull of the Galapagos Islands.",
-                        "#30: Some gull colonies display mobbing behaviour and attacking potential predators.",
-                        "#31: Gulls can paddle in shallow water to flush out hiding marine invertebrates.",
-                        "#32: Fossils of gull relatives have been found dating to the Oligocene epoch.",
-                        "#33: Gulls generally stay with the same mate every year, though breakups can happen.",
-                        "#34: Gulls are able to detect food from almost 5 kilometers away! (That's over 3 miles!)",
-                        "#35: By tapping their feet on the ground, some gulls can lure earthworms to the surface.",
-                        "#36: Seagulls fly over the sea because if they flew over the bay they'd be called bagels.",
-                        "#37: Coastal species will often follow fishing boats, to either take some of the catch or feed on the resulting refuse.",
-                        "#38: Gull nests are generally made of vegetation, such as grass, algae, and twigs.",
-                        "#39: Certain gull species have been observed to use tools, such as using bait to catch fish.",
-                        "#40: Gulls are more likely to steal food from humans if they see a person interact with the food first.",
-                        "#41: Defenses used by gulls include calls, aerial attacks, and purposely aiming their droppings on their foes.",
-                        "#42: Gulls may resemble other, unrelated seabirds, such as albatrosses and fulmars.",
-                        "#43: Gulls will sometimes take care of other chicks in their colony that aren't their own, helping each other with parental duties.",
-                        "#44: Most species migrate only short distances or are year-round residents in their range, but a few will migrate long distances, sometimes across continents.",
-                        "#45: Gulls are typically quite long-lived, with the European Herring Gull (not pictured) living up to 49 years old.",
-                        "#46: oh wow im finally halfway to finishing thsi list of facts! Just another forty-six to go...",
-                        "#47: Gulls can eat large food items by unhinging their jaws. They have to do this because modern birds don't have teeth.",
-                        "#48: The flight feathers of gulls (as well as other birds such as albatrosses) have black tips. This is because melanin, the pigment involved, strengthens the structure of feathers.",
-                        "#49: This one vaguely resembles a bowling pin.",
-                        "#50: Gulls, as well as other animals with eyes on the sides of their heads, have a large field of view, being able to see beside and behind them with one eye. They can also switch to a two-eyed configuration for depth perception.",
-                        "#51: Ring-billed Gulls (pictured) have light yellow eyes.",
-                        "#52: Large gulls tend to feed on the ground, while smaller ones are more likely to hover-dip for fish and catch insects while flying.",
-                        "#53: Gulls can pick up and drop the shells of mollusks to open them.",
-                        "#54: California gulls (pictured) often associate with flocks of Ring-billed Gulls.",
-                        "#55: The California Gull  (pictured) is the state bird of the American state of Utah, due to eating a 19th century katydid infestation that was ravaging pioneers' crops.",
-                        "#56: Gulls are protected by law in Canada under the Migratory Birds Convention Act.",
-                        "#57: Juvenile gulls generally take around one to four years to molt into their adult plumages.",
-                        "#58: The banding code of the California Gull, as provided by the BBL and IBP, is CAGU.",
-                        "#59: Airplane mode has been turned on.",
-                        "#60: Gulls typically have legs. If you see one without any, then it has no legs.",
-                        "#61: As of 2022, there are 11 gull genera, with the genus <i>Larus</i> having the most species: 24.",
-                        "#62: The tails of most gulls are rounded, except for those of the Sabine's Gull and Swallow-tailed Gull.",
-                        "#63: 👁️👄👁️",
-                        "#64: Though as a group they are virtually cosmopolitan, being found across the entire world, gulls are less common in the tropics.",
-                        "#65: The flag and coat of arms of the Norwegian municipality of Haugesund feature three flying gulls lined up vertically.",
-                        "#66: Most gulls breed once every year.",
-                        "#67: Human activity, such as overfishing, can cause gulls to alter their behaviour, such as changing their diet or moving into cities.",
-
-                        ]
-
-
-
-
-
-
-                </script>
 
                 <!--Randomizer button-->
                 <button 
@@ -151,5 +61,98 @@
                 </ul>
             </div>
         </div>
+
+
+
+    <!--button scripts-->
+        <script>
+            function randomNumberUpTo(limit) {
+                return Math.floor(Math.random() * limit) + 1   
+            }
+
+            let soundId;
+            let audio = document.getElementById('sound' + soundId);
+
+            //list of gull facts
+            const factList = 
+                [
+                "This line is supposed to be an offset for the random number generator. it should not appear on the page.",
+
+                "#1: Did you know that there are around 54 species of gull in the world?",
+                "#2: Most gulls nest on bare ground, with a few exceptions.",
+                "#3: Gulls are related to terns and skimmers. All three are in the taxonomic family Laridae.",
+                "#4: Gull chicks are very fluffy and polka-dotted.",
+                "#5: Gulls are found on every continent. Yes that includes a little bit of Antarctica.",
+                "#6: The word <q>Seagull</q> is used as a casual term, rather than a formal one.",
+                "#7: The long wings of a gull help it glide efficiently.",
+                "#8: All gulls until recently were classified in a single genus. Many have since been split into different genera.",
+                "#9: Many gulls are generalists, and can survive in a large variety of habitats ranging from wetlands, to coasts, and even deserts.",
+                "#10: Did you know that gulls can drink saltwater, expelling salt through their nostrils?",
+                "#11: Gull colonies vary in size from a few pairs, to several hundred thousand birds!",
+                "#12: Plumage differs between gull species. Common patterns include white with gray wings, or white with gray wings and a black head.",
+                "#13: When trying to identify gulls, useful distinctions include bill patterns, darkness of the wings, eye colour, size, and leg colour.",
+                "#14: Some species are found in parking lots frequently.",
+                "#15: Despite what the above image may imply, juvenile gulls do not fill the niche of coconuts.",
+                "#16: The arctic-dwelling Ivory Gull (not pictured) is completely white.",
+                "#17: The Lava Gull (not pictured) is almost completely grey.",
+                "#18: Gull hatchlings are precocial, meaning they can move about as soon as they hatch, making them more like ducklings rather than songbird nestlings.",
+                "#19: Gulls will sometimes steal food from other birds.",
+                "#20: Although the word is in limited use today, gulls were known as <q>mews</q> in English.",
+                "#21: The Bonarparte's Gull (not pictured) builds its nest on tree branches in the boreal forest.",
+                "#22: Kittiwakes (not pictured) nest on cliffs.",
+                "#23: The smallest gull in the world is the Little Gull.",
+                "#24: The largest gull in the world is the Great Black-backed Gull.",
+                "#25: Gulls are able to eat a large variety of foods, including fish, invertebrates, food scavenged or stolen from humans, washed up dead stuff, and even live whale blubber.",
+                "#26: The Ring-billed Gull (pictured) has the binomial name <i>Larus delawarensis</i>, the latter word referring to the Delaware River.",
+                "#27: The white part in the droppings of gulls (and most other birds) is uric acid. The actual fecal matter is the brown dots in the middle. This reduces dehydration.",
+                "#28: Ross's Gulls (not pictured) in breeding plumage are pink with grey wings.",
+                "#29: Most gulls are active during the day, except for the Swallow-tailed Gull of the Galapagos Islands.",
+                "#30: Some gull colonies display mobbing behaviour and attacking potential predators.",
+                "#31: Gulls can paddle in shallow water to flush out hiding marine invertebrates.",
+                "#32: Fossils of gull relatives have been found dating to the Oligocene epoch.",
+                "#33: Gulls generally stay with the same mate every year, though breakups can happen.",
+                "#34: Gulls are able to detect food from almost 5 kilometers away! (That's over 3 miles!)",
+                "#35: By tapping their feet on the ground, some gulls can lure earthworms to the surface.",
+                "#36: Seagulls fly over the sea because if they flew over the bay they'd be called bagels.",
+                "#37: Coastal species will often follow fishing boats, to either take some of the catch or feed on the resulting refuse.",
+                "#38: Gull nests are generally made of vegetation, such as grass, algae, and twigs.",
+                "#39: Certain gull species have been observed to use tools, such as using bait to catch fish.",
+                "#40: Gulls are more likely to steal food from humans if they see a person interact with the food first.",
+                "#41: Defenses used by gulls include calls, aerial attacks, and purposely aiming their droppings on their foes.",
+                "#42: Gulls may resemble other, unrelated seabirds, such as albatrosses and fulmars.",
+                "#43: Gulls will sometimes take care of other chicks in their colony that aren't their own, helping each other with parental duties.",
+                "#44: Most species migrate only short distances or are year-round residents in their range, but a few will migrate long distances, sometimes across continents.",
+                "#45: Gulls are typically quite long-lived, with the European Herring Gull (not pictured) living up to 49 years old.",
+                "#46: oh wow im finally halfway to finishing thsi list of facts! Just another forty-six to go...",
+                "#47: Gulls can eat large food items by unhinging their jaws. They have to do this because modern birds don't have teeth.",
+                "#48: The flight feathers of gulls (as well as other birds such as albatrosses) have black tips. This is because melanin, the pigment involved, strengthens the structure of feathers.",
+                "#49: This one vaguely resembles a bowling pin.",
+                "#50: Gulls, as well as other animals with eyes on the sides of their heads, have a large field of view, being able to see beside and behind them with one eye. They can also switch to a two-eyed configuration for depth perception.",
+                "#51: Ring-billed Gulls (pictured) have light yellow eyes.",
+                "#52: Large gulls tend to feed on the ground, while smaller ones are more likely to hover-dip for fish and catch insects while flying.",
+                "#53: Gulls can pick up and drop the shells of mollusks to open them.",
+                "#54: California gulls (pictured) often associate with flocks of Ring-billed Gulls.",
+                "#55: The California Gull  (pictured) is the state bird of the American state of Utah, due to eating a 19th century katydid infestation that was ravaging pioneers' crops.",
+                "#56: Gulls are protected by law in Canada under the Migratory Birds Convention Act.",
+                "#57: Juvenile gulls generally take around one to four years to molt into their adult plumages.",
+                "#58: The banding code of the California Gull, as provided by the BBL and IBP, is CAGU.",
+                "#59: Airplane mode has been turned on.",
+                "#60: Gulls typically have legs. If you see one without any, then it has no legs.",
+                "#61: As of 2022, there are 11 gull genera, with the genus <i>Larus</i> having the most species: 24.",
+                "#62: The tails of most gulls are rounded, except for those of the Sabine's Gull and Swallow-tailed Gull.",
+                "#63: 👁️👄👁️",
+                "#64: Though as a group they are virtually cosmopolitan, being found across the entire world, gulls are less common in the tropics.",
+                "#65: The flag and coat of arms of the Norwegian municipality of Haugesund feature three flying gulls lined up vertically.",
+                "#66: Most gulls breed once every year.",
+                "#67: Human activity, such as overfishing, can cause gulls to alter their behaviour, such as changing their diet or moving into cities.",
+
+                ]
+
+
+
+
+
+
+        </script>
     </body>
 </html>

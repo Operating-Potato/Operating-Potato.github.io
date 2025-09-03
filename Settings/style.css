@@ -1,0 +1,15 @@
+@import url(/navbar/navbar_main.css);
+@import url(/navbar/page_highlights/settings.css);
+
+body {
+    background-color: rgb(40,40,55);
+    color:white;
+    font-family:monospace;
+}
+
+button {
+    font-family: monospace;
+    background-color:rgb(40,40,55);
+    color:white;
+    border-color:white;
+}
