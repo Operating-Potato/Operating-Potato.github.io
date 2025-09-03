@@ -61,7 +61,6 @@
     padding-left:2em;
 
     text-align: start;
-
 }
 
 a.navlink {
@@ -79,14 +78,16 @@ a.navlink {
 }
 
 .sublink_container {
+    display:flex;
+    flex-flow:column;
     padding-bottom:10px;
 }
 
 #sublink {
-    height:25px;
+    min-height:25px;
     max-width:200px;
     padding-left:3em;
-    padding-bottom:10px;
+    padding-bottom:0;
     padding-top:0;
     align-content: center;
 
