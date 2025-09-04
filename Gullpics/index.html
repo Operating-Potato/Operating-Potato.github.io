@@ -17,7 +17,7 @@
                 </div>
 
             <div class="section">
-                <a id="bird-now-link" href="1.jpg" target="_blank"><img id="bird-now" src="1.jpg" alt="An image of a gull."></a>
+                <a id="bird-now-link" href="full_res/1.jpg" target="_blank"><img id="bird-now" src="1.jpg" alt="An image of a gull."></a>
             </div>
             <div class="section" id="button">
                 <!--sounds-->
@@ -28,7 +28,7 @@
 
                 <!--Randomizer button-->
                 <button 
-                onclick="let number = randomNumberUpTo(96); document.getElementById('bird-now').src=number + '.jpg'; document.getElementById('bird-now-link').href=number + '.jpg';
+                onclick="let number = randomNumberUpTo(96); document.getElementById('bird-now').src=number + '.jpg'; document.getElementById('bird-now-link').href='full_res/' + number + '.jpg';
                                 document.getElementById('coolGullFact').innerHTML = factList[number];
                 soundId = randomNumberUpTo(3); 
                 audio = document.getElementById('sound' + soundId);
