@@ -1,0 +1,81 @@
+		body {
+            display:flex;
+            justify-content: center;
+			font-family:monospace;
+			color:white;
+            background-image: url(/Gullpics/full_res/14.jpg);
+            background-size:cover;    
+            background-position: center top;
+            background-attachment: fixed;
+			padding:0;
+			margin:0;
+		}
+        #site-title {
+            display:flex;
+			padding:5px;
+        }
+        #site-icon {
+			height: 55px;
+            width:auto;
+			margin:0 20px 0 0;
+            border-radius: 7px;
+		}
+
+
+		.container {
+
+			max-width: 700px;
+			background-color: rgba(150,150,255,0.7);
+            backdrop-filter: blur(10px);
+            border-radius:10px;
+            margin-bottom:20px;
+            padding:20px;
+		}
+
+		hr {
+			color:white;
+			border-style:solid;
+		}
+
+		.wrapper {
+			display:flex;
+            flex-flow:column;
+			justify-content: flex-start;
+            height:100%;
+            width: 700px;
+            max-width:780px;
+            padding:20px;
+        }
+		.navbar {
+			background-color: rgb(230,230,230);
+			position:sticky;
+			top:0; left:0;
+			margin:0;
+			padding:0;
+		}
+
+		.content-box {
+			display:flex;
+			flex-flow:row;
+			width:100%;
+			height: 100%;
+		}
+		#bird {justify-content: left;}
+		#drawing {justify-content: right; margin-top: 10px;}
+
+		.caption {
+			width:fit-content;
+			max-width: 420px;
+			height:150px;
+		}
+
+		#rightcaption {margin-left:20px;}
+		#leftcaption {margin-right:20px;}
+
+		#interest {
+			width: 200px;
+			height: 150px;
+			object-fit: cover;
+			max-width:100%;
+			border-radius: 10px;
+		}
