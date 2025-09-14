@@ -3,7 +3,7 @@
             justify-content: center;
 			font-family:monospace;
 			color:white;
-            background-image: url(/Gullpics/full_res/14.jpg);
+            background-image: url(background.jpg);
             background-size:cover;    
             background-position: center top;
             background-attachment: fixed;
@@ -13,6 +13,8 @@
         #site-title {
             display:flex;
 			padding:5px;
+			position:sticky;
+			justify-content: space-between;
         }
         #site-icon {
 			height: 55px;
@@ -32,6 +34,22 @@
             padding:20px;
 		}
 
+		.navigation {
+			display:flex;
+			text-align: right;
+			margin-right:5px;
+			width:50%;
+		}
+
+		.navigation h2 {
+			font-weight: normal;
+		}
+
+		a {
+			color:rgb(211,211,255);
+			text-decoration: none;
+		}
+
 		hr {
 			color:white;
 			border-style:solid;
@@ -46,13 +64,6 @@
             max-width:780px;
             padding:20px;
         }
-		.navbar {
-			background-color: rgb(230,230,230);
-			position:sticky;
-			top:0; left:0;
-			margin:0;
-			padding:0;
-		}
 
 		.content-box {
 			display:flex;
