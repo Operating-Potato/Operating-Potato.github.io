@@ -129,12 +129,18 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Aquarium/Pterophyllum_scalare</loc>
+        <loc>https://operating-potato.github.io/Aquarium/Pterophyllum_scalare/</loc>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://operating-potato.github.io/Aquarium/Clupea_harengus/</loc>
+        <priority>0.7</priority>
+    </url>
+
+
         <!--Gulls-->
     <url>
-        <loc>https://operating-potato.github.io/Gullpics</loc>
+        <loc>https://operating-potato.github.io/Gullpics/</loc>
         <priority>0.7</priority>
     </url>
 </urlset>
