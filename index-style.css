@@ -8,19 +8,11 @@ body {
 }
 @keyframes rotate
 {
-     0%   { transform: rotate3d(0 1 0 0deg); }
-     25%  { transform: rotate3d(0 1 0 90deg); }
-     50%  { transform: rotate3d(0 1 0 180deg); }
-     75%  { transform: rotate3d(0 1 0 270deg); }
-     100% { transform: rotate3d(0 1 0 360deg); }
-}
-@keyframes rotate
-{
      0%   { transform: rotate3d(0, 1, 0, 0deg) rotate(0); }
-     25%  { transform: rotate3d(0, 1, 0, 90deg) rotate(90deg); }
+     25%  { transform: rotate3d(0, 1, 0, 0deg) rotate(90deg); }
      50%  { transform: rotate3d(0, 1, 0, 180deg) rotate(180deg); }
-     75%  { transform: rotate3d(0, 1, 0, 270deg) rotate(270deg); }
-     100% { transform: rotate3d(0, 1, 0, 360deg) rotate(360deg); }
+     75%  { transform: rotate3d(0, 1, 1, 180deg) rotate(270deg); }
+     100% { transform: rotate3d(0, 1, 0, 0deg) rotate(360deg); }
 }
 #coolbird {
     border-radius: 10px;

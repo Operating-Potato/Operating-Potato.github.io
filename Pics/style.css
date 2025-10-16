@@ -1,0 +1,95 @@
+@import url(/navbar/navbar_main.css);
+#photos {
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url("/navbar/photos_navbar.jpg");
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    color: white;
+}
+
+html, body {
+    font-family: serif;
+    margin:0;
+    padding:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+
+hr {color:white; width: 50%;}
+
+.main {
+    color:white;
+    position: inline;
+    height:calc(100% - var(--bottom-margin));
+    padding-top:0 !important;
+    display:flex;
+    flex-flow:row;
+}
+.container {
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section {
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    height:40%;
+    width:80%;
+    border-radius: 5px;
+}
+
+.inside-box {
+    border-style: solid;
+    color:white;
+    width:75%;
+    height: 75%;
+    align-content: center;
+}
+
+.main a {
+    color:white !important;
+    text-decoration: none;
+}
+.main a:hover {
+    text-decoration:underline;
+}
+
+.bg {
+    z-index:-1;
+    width:100%;
+    height:100%;
+    display:block;
+    position:fixed;
+    top:0;
+    margin:0;
+    padding:0;
+
+    background-color: black;
+    filter:blur(5px);
+    img {
+        height:50%;
+        width: 100%;
+        object-fit: cover;
+        display:block;
+        padding:0;
+        margin:0;
+        border:0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #bg-top {height: calc(50% - 30px);}
+    #bg-bottom {height: calc(50% + 30px);}
+}
+

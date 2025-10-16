@@ -9,8 +9,10 @@
 
 /*padding for rest of page*/
 .main {
+    --bottom-margin: 0px;
     margin-left: 220px;
     margin-right: 20px;
+    margin-bottom: var(--bottom-margin);
 }
 
 
@@ -100,9 +102,11 @@ a.navlink {
 
 @media only screen and (max-width: 720px) {
     .main {
+        --bottom-margin: 60px;
+
         margin-left: 0;
         margin-right:0;
-        margin-bottom: 60px;
+        height: calc(100% - 60px);
     }
     .nav_container {
         position: fixed;
