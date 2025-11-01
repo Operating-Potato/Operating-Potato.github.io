@@ -1,9 +1,10 @@
-#home {
+#aquarium {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/navbar/home_navbar.png");
+        url("/assets/navbar/aquarium_navbar.png");
     background-size: cover;
     background-color: white;
     background-position: center;
     color: white;
 }
+

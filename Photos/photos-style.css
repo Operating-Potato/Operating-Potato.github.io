@@ -1,5 +1,5 @@
-@import url(/navbar/navbar_main.css);
-@import url(/navbar/page_highlights/photos.css);
+@import url(/assets/navbar/navbar_main.css);
+@import url(/assets/navbar/page_highlights/photos.css);
 
 body {
     background-color: rgb(10, 35, 55);
