@@ -1,8 +1,23 @@
 @import url(/assets/navbar/navbar_main.css);
 @import url(/assets/navbar/page_highlights/home.css);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*top box*/
+@import url(/assets/home/top-box.css);
+
+/*text boxes*/
+@import url(/assets/home/text.css);
+
+/*showcase links*/
+@import url(/assets/home/showcase.css);
 
 body {
     background-color: aliceblue;
+    background-image: url(/assets/home/images/background.gif);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: monospace;
 
 }
@@ -14,61 +29,31 @@ body {
      75%  { transform: rotate3d(0, 1, 1, 180deg) rotate(270deg); }
      100% { transform: rotate3d(0, 1, 0, 0deg) rotate(360deg); }
 }
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display:flex;
+    flex-flow: column;
+}
+
 #coolbird {
     border-radius: 10px;
     position:static;
 
     animation-name: rotate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infini2te;
     animation-play-state: running;
-}
-
-#coolbird:hover {
-    transform: scale(0.9) rotate(10deg);
-}
-#coolbird:active {
-    transform: scale(0.8) rotate(20deg)
-}
-
-
-.languages {
-    display:flex;
-    flex-flow: row;
-    align-items: center;
-
-    
-}
-
-.lang_option {
-    background-image: linear-gradient(rgba(210, 240, 255, 0.5), rgb(200, 220, 255, 0.5));
-
-    margin: 10px;
-
-    width: 100px;
-    height: 50px;
-
-    text-align: center;
-
-    border-radius: 10px;
-    border-style:solid;
-    border-width: 2px;
-    color:black;
-    border-color:black;
-}
-
-a .lang_option {
-    text-decoration: none;
-    color: blue;
-    border-color:blue;
-}
-
-.lang_option:hover {
-        padding:5px;
-}
-
-.languages a:hover {
-    text-decoration: none;
+    margin-right: 20px;
 }
 
 a {
@@ -83,6 +68,109 @@ a:hover {
 }
 @media only screen and (max-width: 720px) {
     .main {padding-top:0;}
+}
+ hr {
+    width: 100%;
+ }
+
+/*sections*/
+.section {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+.with-margin {
+    margin-bottom: 20px;
+}
+.half-margin {
+    margin-bottom: 10px;
+}
+
+.fit-content {
+    width: fit-content;
+    max-width: 600px;
+}
+
+.full-row {
+    width: 100%;
+    max-width: 600px;
+}
+
+.onethird-row {
+    width: calc(calc(1 / 3) * 100%);
+}
+.twothirds-row {
+    width: calc(calc(2 / 3) * 100%);
+}
+
+.half-row {
+    width: 50%;
+}
+.left-half {
+    align-self: start;
+}
+.right-half {
+    align-self: end;
+}
+
+/*stamps*/
+#stamps {
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+    float:right;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content:space-around;
+}
+
+#stamps img {
+    width: 50%;
+    min-width: 100px;
+    height: auto;
+    margin:0;
+    padding:0;
+}
+
+#stamp-goldfish {
+    align-self: end;
+}
+
+/*other*/
+.decor-overlay {
+    position: absolute;
+    z-index: 100;
+}
+
+#golfish-gif {
+    width: 120px;
+    height: auto;
+    aspect-ratio: 323 / 211;
+    top:90px;
+    right: 10px;
+    transition: transform 0.5s;
+    filter: drop-shadow(5px 5px black);
+}
+#golfish-gif:hover {
+    transform: scale(1.2);
+}
+#golfish-gif:active {
+    transform: scale(-1.2);
+}
+
+#drawing-overlay {
+    width: 80px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    bottom:10px;
+    left: -10px;
+    transform: rotate(10deg);
+    box-shadow: 0px 0px 10px black;
+    transition: transform 0.5s;
+}
+#drawing-overlay:hover {
+    transform: scale(1.2);
 }
 
 

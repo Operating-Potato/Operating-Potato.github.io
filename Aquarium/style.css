@@ -1,5 +1,5 @@
-@import url(/navbar/navbar_main.css);
-@import url(/navbar/page_highlights/aquarium.css);
+@import url(/assets/navbar/navbar_main.css);
+@import url(/assets/navbar/page_highlights/aquarium.css);
 
 body {
     background-image: url("pompanos.jpg");

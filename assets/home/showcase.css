@@ -1,0 +1,63 @@
+.showcase a {
+    color: rgb(206, 206, 255);
+}
+
+.showcase.short {
+    height: 150px;
+}
+.showcase.tall {
+    max-height: 300px;
+    min-height: 230px;
+    flex-wrap: wrap;
+}
+
+.showcase-text {
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    padding: 0 10px 0 10px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.showcase-text.short {
+    height:100%;
+    border-radius: 10px 0 0 10px;
+}
+.showcase-text.tall {
+    height:40%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.showcase-image.short {
+    height:100%;
+    
+    img {
+        border-radius: 0 10px 10px 0;
+    }
+}
+.showcase-image.tall{
+    height:60%;
+    width: 100%;
+    img {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+#showcase-games-text {
+    background-image: linear-gradient(45deg, rgb(80, 86, 156), transparent);
+}
+#showcase-pics-text {
+    background-image: linear-gradient(45deg, rgb(10, 35, 55), #878787);
+}
+#showcase-aquarium-text {
+    background-image: linear-gradient(45deg, #A0A587, transparent);
+}

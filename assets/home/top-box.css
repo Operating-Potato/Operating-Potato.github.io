@@ -1,0 +1,60 @@
+#top-row {
+    top:0;
+    position: relative;
+}
+
+.titlebox {
+    width: 100%;
+    text-align: center;
+    height: 130px;
+
+
+}
+
+#page-title {
+    font-family: "Permanent Marker";
+    background-color: aliceblue;
+    margin:0 0 10px 0;
+    padding:10px 5px 10px 5px;
+    color: rgb(64, 98, 128);
+    text-shadow: 3px 3px #ccedcd;
+    border: solid 3px rgb(64,98,128);
+}
+
+#social-links {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: calc(100% - 60px);
+    padding:0;
+    margin:0;
+}
+
+.button-social {
+    line-height:0;
+        padding:0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(50% - 10px);
+    border-radius: 5px;
+    transition: transform 0.1s;
+    font-size: 11px;
+    font-weight: bold;
+    p {
+        margin:0;
+    }
+}
+
+.button-social:hover {
+
+    transform: scale(105%);
+}
+
+a.button-social {
+    color: #f6fff6;
+}
