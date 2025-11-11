@@ -200,3 +200,14 @@ a:hover {
 #coolbird:hover {
     transform: rotate(360deg) scale(1.2);
 }
+
+
+.gull {
+    width: 84px;
+    image-rendering: pixelated;
+
+    position: absolute;
+    top: -67px;
+    left: 55%;
+
+}
