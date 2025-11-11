@@ -39,15 +39,6 @@ body {
     height: 100lvh;
 }
 
-@keyframes rotate
-{
-     0%   { transform: rotate3d(0, 1, 0, 0deg) rotate(0); }
-     25%  { transform: rotate3d(0, 1, 0, 0deg) rotate(90deg); }
-     50%  { transform: rotate3d(0, 1, 0, 180deg) rotate(180deg); }
-     75%  { transform: rotate3d(0, 1, 1, 180deg) rotate(270deg); }
-     100% { transform: rotate3d(0, 1, 0, 0deg) rotate(360deg); }
-}
-
 .wrapper {
     width: 100%;
     display: flex;
@@ -62,17 +53,6 @@ body {
     flex-flow: column;
 }
 
-#coolbird {
-    border-radius: 10px;
-    position:static;
-
-    animation-name: rotate;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    animation-iteration-count: infini2te;
-    animation-play-state: running;
-    margin-right: 20px;
-}
 
 a {
     text-decoration: none;
@@ -84,12 +64,15 @@ a:hover {
 .main {
     padding-top:10px;
 }
+
+
 @media only screen and (max-width: 720px) {
     .main {padding-top:0;}
 }
  hr {
     width: 100%;
  }
+
 
 /*sections*/
 .section {
@@ -192,3 +175,28 @@ a:hover {
 }
 
 
+@keyframes rotate
+{
+     0%   { transform: rotate3d(0, 1, 0, 0deg) rotate(0); }
+     25%  { transform: rotate3d(0, 1, 0, 0deg) rotate(90deg); }
+     50%  { transform: rotate3d(0, 1, 0, 180deg) rotate(180deg); }
+     75%  { transform: rotate3d(0, 1, 1, 180deg) rotate(270deg); }
+     100% { transform: rotate3d(0, 1, 0, 0deg) rotate(360deg); }
+}
+
+#coolbird {
+    border-radius: 10px;
+    position:static;
+
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    margin-right: 20px;
+    transition: transform 1s;
+}
+
+#coolbird:hover {
+    transform: rotate(360deg) scale(1.2);
+}
