@@ -209,6 +209,6 @@ a:hover {
 
 #gull-link {
     position: absolute;
-    bottom: calc(100% - 1px);
+    bottom: calc(100% - 0.5px);
     left: 55%;
 }
