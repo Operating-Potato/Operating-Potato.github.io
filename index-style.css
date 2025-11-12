@@ -203,12 +203,12 @@ a:hover {
 
 
 #gull {
-    width: 84px;
+    width: calc(100% * 3);
     image-rendering: pixelated;
 }
 
 #gull-link {
     position: absolute;
-    top: -67px;
+    bottom: calc(100% - 1px);
     left: 55%;
 }
