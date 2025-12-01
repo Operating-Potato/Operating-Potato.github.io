@@ -7,13 +7,13 @@ for (let fish = 0; fish < 4; fish++) {
 //list for minibird images
 const minibirds = [
     "RBGU.gif",
-    "BBMA.gif",
+    "BBMA2.gif",
 ];
 
 //list for links
 const links = [
-    "/birds/sp/gulls/RBGU/",
-    "/birds/sp/crows/BBMA/",
+    "/birds/sp/gulls/RBGU",
+    "/birds/sp/crows/BBMA",
 ]
 
 let length = minibirds.length;
@@ -26,10 +26,12 @@ let randomNumber = randomNumberUpTo(length);
 
 //replace link
 function replaceLink() {
-    document.getElementById("gull-link").setAttribute('href', links[randomNumber]);
+    let link = links[randomNumber];
+    document.getElementById("gull-link").setAttribute('href', link);
 }
 function replaceImage() {
-    document.getElementById("gull").setAttribute('src', minibirds[randomNumber]);
+    let image = `/birds/assets/minibirds/${minibirds[randomNumber]}`;
+    document.getElementById("gull").setAttribute('src', image);
 }
 
 replaceLink()
