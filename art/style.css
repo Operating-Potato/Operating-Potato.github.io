@@ -1,0 +1,41 @@
+@import url(/_assets/navbar/navbar_main.css);
+@import url(/_assets/navbar/page_highlights/photos.css);
+
+body {
+    font-family: monospace;
+}
+.main {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.container {
+    max-width: 1000px;
+}
+
+#images {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0;
+    line-height: 0;
+    align-self: center;
+}
+img {
+    width: calc(100% / 3);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    img {
+        width: 100%;
+    }
+}
