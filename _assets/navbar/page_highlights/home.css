@@ -1,7 +1,7 @@
-#photos {
+#home {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/assets/navbar/photos_navbar.jpg");
+        url("/_assets/navbar/home_navbar.png");
     background-size: cover;
     background-color: white;
     background-position: center;
