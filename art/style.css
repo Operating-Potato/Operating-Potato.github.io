@@ -19,9 +19,20 @@ body {
     padding: 0;
     line-height: 0;
     align-self: center;
+
+    a {
+        width: calc(100% / 3);
+        aspect-ratio: 1 / 1;
+        margin: 0;
+        padding: 0;
+        transition: 0.05s;
+    }
+    a:hover {
+        transform: scale(1.05);
+    }
 }
 img {
-    width: calc(100% / 3);
+    width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin: 0;
@@ -29,13 +40,13 @@ img {
 }
 
 @media only screen and (max-width: 850px) {
-    img {
+    a {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    img {
+    a {
         width: 100%;
     }
 }
