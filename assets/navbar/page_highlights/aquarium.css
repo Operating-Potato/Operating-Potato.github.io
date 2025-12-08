@@ -1,10 +1,10 @@
-
-#games {
+#aquarium {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/_assets/navbar/games_navbar.png");
-    background-color: white;
+        url("/assets/navbar/aquarium_navbar.png");
     background-size: cover;
+    background-color: white;
     background-position: center;
     color: white;
 }
+

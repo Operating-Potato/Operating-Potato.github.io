@@ -1,52 +1,17 @@
-/*navigation bar*/
-.nav_container {
-    justify-items: left;
-    top: 10px;
-}
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    top:0;
-    margin-bottom: 10px;
-    width:fit-content;
-    height: auto;
-    text-align: left;
-    align-content:center;
-    align-items: center;
-
-
-}
-
-.box {
-    align-content: center;
-    height: 40px;
-    width: fit-content;
-    margin-top: 10px;
-    padding-top: 0%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-}
-
-a.navlink {
-    text-decoration: none;
-    color: rgb(50,50,50);
-}
-
 #home:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/_assets/navbar/home_navbar.png");
+        url("/assets/navbar/home_navbar.png");
     background-size: cover;
-    background-position: center;
     background-color: white;
+    background-position: center;
     color: white;
 }
 
 #games:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/_assets/navbar/games_navbar.png");
+        url("/assets/navbar/games_navbar.png");
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -56,17 +21,17 @@ a.navlink {
 #photos:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/_assets/navbar/photos_navbar.jpg");
+        url("/assets/navbar/photos_navbar.jpg");
     background-size: cover;
-    background-position: center;
     background-color: white;
+    background-position: center;
     color: white;
 }
 
-#article {
+#article:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("/_assets/navbar/articles_navbar.png");
+        url("/assets/navbar/articles_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -76,14 +41,14 @@ a.navlink {
 #aquarium:hover {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url("/_assets/navbar/aquarium_navbar.png");
+        url("/assets/navbar/aquarium_navbar.png");
     background-size: cover;
-    background-position: center;
     background-color: white;
+    background-position: center;
     color: white;
 }
 
-#settings:hover {
+#settings {
     background-color: rgb(25, 25, 30);
     color:white;
 }

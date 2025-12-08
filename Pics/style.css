@@ -1,5 +1,5 @@
-@import url(/_assets/navbar/navbar_main.css);
-@import url(/_assets/navbar/page_highlights/photos.css);
+@import url(/assets/navbar/navbar_main.css);
+@import url(/assets/navbar/page_highlights/photos.css);
 
 html, body {
     font-family: serif;

@@ -1,15 +1,15 @@
-@import url(_assets/navbar/navbar_main.css);
-@import url(_assets/navbar/page_highlights/home.css);
+@import url(/assets/navbar/navbar_main.css);
+@import url(/assets/navbar/page_highlights/home.css);
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /*top box*/
-@import url(_assets/home/top-box.css);
+@import url(assets/home/top-box.css);
 
 /*text boxes*/
-@import url(_assets/home/text.css);
+@import url(/assets/home/text.css);
 
 /*showcase links*/
-@import url(_assets/home/showcase.css);
+@import url(/assets/home/showcase.css);
 
 html {
     background-color: aliceblue;
@@ -22,7 +22,7 @@ body {
 
 /*background*/
 #background-animated {
-    background-image: url(_assets/home/images/background.gif);
+    background-image: url(assets/home/images/background.gif);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;

@@ -2,7 +2,7 @@
 #article {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url("/_assets/navbar/articles_navbar.png");
+        url("/assets/navbar/articles_navbar.png");
     background-size: cover;
     background-position: center;
     background-color: white;
