@@ -48,6 +48,8 @@
     border-radius: var(--sidebar-border-radius);
     font-family: "Noto Sans Mono" !important;
     font-size: 12px;
+
+    overflow-y: hidden;
 }
 .navbar {
     align-content: flex-start;
