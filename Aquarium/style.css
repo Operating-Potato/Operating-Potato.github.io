@@ -17,21 +17,22 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    flex-flow: row;
+    flex-flow: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     flex-basis: 50%;
+    width: 100%;
 }
 .intro-paragraph {
+        box-sizing: border-box;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-content: center;
         background-color: rgba(255, 255, 255, 0.50);
-        padding: 25px;
-        margin: 25px;
-        width: 500px;
-        flex-basis: 500px;
+        padding: 20px;
+        margin: 25px 25px 10px 25px;
+        max-width: 500px;
         max-height: 500px;
         text-align: center;
         border-radius: 10px;
@@ -40,37 +41,38 @@ h1 {
         }
 }
 .fish {
+    box-sizing: border-box;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.50);        
-    padding: 25px;
-    margin: 25px;
-    width: 500px;
+    background-color: rgba(0, 0, 0, 0.50);        
+    padding: 10px;
+    margin: 10px 25px 25px 25px;
+    max-width: 750px;
     max-height: 500px;
     border-radius: 10px;
     column-gap: 10px;
     row-gap: 10px;
     overflow: auto;
-    scrollbar-width: thin;
+    scrollbar-width: normal;
 }
 .responsive {
     box-sizing: border-box;
-    width: calc(calc(100% / 3) - calc(10px - calc(10px / 3)));
+    width: calc(25% - calc(10px - calc(10px / 3)));
 
     background-color: blue;
     float: left;
 }
-@media only screen and (max-width: 1500px) {
-    .intro-paragraph {
-        max-height:fit-content;
+@media only screen and (max-width: 950px) {
+    .responsive {
+        width: calc(calc(100% / 3) - calc(10px - calc(10px / 3)));
     }    
 }
 
 @media only screen and (max-width: 825px) {
     .responsive {
-      width: calc(50% - calc(10px - calc(10px / 3)));
+      width: calc(50% - 5px);
     }
 }  
 @media only screen and (max-width: 380px) {
