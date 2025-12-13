@@ -42,7 +42,7 @@
         </div>
         <div class="main">
             <div class="wrapper">
-                <div class="container">
+                <div class="container" id="container-main">
                     <div class="section full-row with-margin" id="top-row">
                         <a href="/birds/"><img src="/site_icon.jpg" style="width: 150px;" id="coolbird" alt="A picture of a magpie perched on a wire."></a>
                         <div class="titlebox">
@@ -139,7 +139,28 @@
                     </div>
                
                     <br>
-                    <p><a href="https://github.com/Operating-Potato/Operating-Potato.github.io/tree/main" target="_blank">Source code</a></p>                    
+                    <div id="fish-tank"></div>
+
+                    <!--fish button script-->
+                    <script>
+                        function addImage(src, width, alt) {
+
+                            let img = 
+                        document.createElement("img");
+
+                            img.src = "/assets/home/images/glass-fish.svg";
+                            img.width = 500;
+                            img.alt = "a fish";
+
+                        document.getElementById("fish-tank").appendChild(img);
+                        };
+                    </script>
+
+                    <button id="fishbutton" style="width: fit-content;" 
+                    onclick="addImage()"
+                    >click here for fish :)</button>
+                    
+                    <p><a href="https://github.com/Operating-Potato/Operating-Potato.github.io/tree/main" target="_blank">Source code</a></p>
                 </div>
             </div>
         </div>
