@@ -7,140 +7,146 @@
 
     <!--Games-->
     <url>
-        <loc>https://operating-potato.github.io/game/</loc>
-        <priority>1.0</priority>
+        <loc>https://operating-potato.github.io/games/</loc>
+        <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://operating-potato.github.io/game/Minnow%20Simulator.html</loc>
+        <loc>https://operating-potato.github.io/games/Minnow%20Simulator.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Super%20Mario%20World.html</loc>
+        <loc>https://operating-potato.github.io/games/Super%20Mario%20World.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Banggari%20Cardinalfish.html</loc>
+        <loc>https://operating-potato.github.io/games/Banggari%20Cardinalfish.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Squares.html</loc>
+        <loc>https://operating-potato.github.io/games/Squares.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Pencil%20Painting.html</loc>
+        <loc>https://operating-potato.github.io/games/Pencil%20Painting.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Squish%20the%20Fish.html</loc>
+        <loc>https://operating-potato.github.io/games/Squish%20the%20Fish.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Paper%20Frog.html</loc>
+        <loc>https://operating-potato.github.io/games/Paper%20Frog.html</loc>
         <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/game/Fish%20Tank.html</loc>
+        <loc>https://operating-potato.github.io/games/Fish%20Tank.html</loc>
         <priority>0.1</priority>
     </url>
 
     <!--Photos-->
     <url>
         <loc>https://operating-potato.github.io/Photos</loc>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-statue.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-statue.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-plants.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-plants.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-fish%202.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-fish%202.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-scooter.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-scooter.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-shelf.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-shelf.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-dock.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-dock.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-robot.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-robot.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-parliament</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-parliament</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-mosaic.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-mosaic.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-badlands</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-badlands</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-fish.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-fish.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-seagulls.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-seagulls.html</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Photos/Photo-pages/Photo-pelicans.html</loc>
+        <loc>https://operating-potato.github.io/photos/Photo-pages/Photo-pelicans.html</loc>
         <priority>0.5</priority>
     </url>
 
     <!--Articles-->
     <url>
-        <loc>https://operating-potato.github.io/Article/</loc>
-        <priority>0.8</priority>
+        <loc>https://operating-potato.github.io/articles/</loc>
+        <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://operating-potato.github.io/Article/Why_We_Should_Have_Glasses_Decor/</loc>
+        <loc>https://operating-potato.github.io/articles/Why_We_Should_Have_Glasses_Decor/</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Article/Tetra/</loc>
+        <loc>https://operating-potato.github.io/articles/Tetra/</loc>
         <priority>0.7</priority>
     </url>
 
     <!--Aquarium-->
     <url>
-        <loc>https://operating-potato.github.io/Aquarium/</loc>
-        <priority>0.8</priority>
+        <loc>https://operating-potato.github.io/aquarium/</loc>
+        <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://operating-potato.github.io/Aquarium/Pimephales_promelas/</loc>
+        <loc>https://operating-potato.github.io/aquarium/Pimephales_promelas/</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Aquarium/Pterophyllum_scalare/</loc>
+        <loc>https://operating-potato.github.io/aquarium/Pterophyllum_scalare/</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://operating-potato.github.io/Aquarium/Clupea_harengus/</loc>
+        <loc>https://operating-potato.github.io/aquarium/Clupea_harengus/</loc>
         <priority>0.7</priority>
     </url>
 
 
         <!--Gulls-->
     <url>
-        <loc>https://operating-potato.github.io/Gullpics/</loc>
-        <priority>0.7</priority>
+        <loc>https://operating-potato.github.io/seagulls/</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!--bird notes-->
+    <url>
+        <loc>https://operating-potato.github.io/birds/</loc>
+        <priority>0.9</priority>
     </url>
 </urlset>
