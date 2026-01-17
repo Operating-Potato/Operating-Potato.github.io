@@ -27,6 +27,7 @@ body {
     flex-flow: row;
     justify-content: center;
     margin-top:10px;
+    --bottom-margin: 20px;
 
 }
 .container {

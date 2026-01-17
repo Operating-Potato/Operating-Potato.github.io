@@ -110,7 +110,7 @@ a.navlink {
 
 @media only screen and (max-width: 720px) {
     .main {
-        --bottom-margin: 65px;
+        --bottom-margin: 65px !important;
 
         margin-left: 0;
         margin-right:0;
