@@ -12,6 +12,7 @@ body {
     width: 100lvw;
     height: 100lh;
     position: fixed;
+    top:0; left;0;
     background-color: rgb(247, 255, 228);
     z-index: -1;
     margin: 0;
@@ -25,6 +26,8 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: center;
+    margin-top:10px;
+
 }
 .container {
     max-width: 1000px;
@@ -48,7 +51,8 @@ body {
         transform: scale(1.05);
     }
 }
-img {
+
+#images img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -60,9 +64,13 @@ img {
     #images a {
         width: 50%;
     }
+    .main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     #images a {
         width: 100%;
     }
