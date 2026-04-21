@@ -4,21 +4,43 @@
         <title>fish page :)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
             body, html {
-                background: linear-gradient(slategrey, slateblue);
+                background: url(/assets/fishswim.gif);
+                background-position: center;
+                background-size: cover;
                 color: white;
                 height: 100%;
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 font-size: xx-large;
+                font-family: "Noto Sans";
+                margin: 0;
+                padding: 0;
             }
-            .wrapper {
-                width: fit-content;
+
+            .sheet {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(slategrey, slateblue);
+                opacity: 50%;
+                position: fixed;
+                top:0;
+                left:0;
+            }
+
+            .main {
+                padding: 24px;
+                box-sizing: border-box;
                 text-align: center;
-                align-content: center;
-                padding: 20px;
+            }
+
+            .main, .leftbar, .rightbar {
+                z-index: 2;
             }
 
             h1 {
@@ -28,15 +50,16 @@
         </style>
     </head>
     <body>
+        <div class="sheet"></div>
                 <div class="leftbar">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Tuna_assortment.png">
         </div>
-        <div class="wrapper">
+
             <div class="main">
                 <p>ouhh... fih...</p>
                 <h1>𓆝 𓆟 𓆞</h1>
             </div>
-        </div>
+
         <div class="rightbar">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Fan_tailed_goldfish.jpg">
         </div>
