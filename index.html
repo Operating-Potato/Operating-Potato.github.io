@@ -152,15 +152,38 @@
                             img.alt = "a fish";
 
                         document.getElementById("fish-tank").appendChild(img);
+
+                        window.scrollBy({
+                            top: 1000,
+                            left: 100,
+                            behavior: 'smooth',
+                            });
+                        };
+                        function changeButtonText(fishText) {
+                            document.getElementById("fishbutton").innerHTML = fishText;
                         };
                         let clickamount = 0;
                     </script>
 
                     <button id="fishbutton" style="width: fit-content;" 
-                    onclick="addImage(); clickamount += 1; 
+                    onclick="                         
+                        clickamount += 1;
+                        console.log(clickamount);
+
+                        let countdown = 15 - clickamount;
+
+                        if (clickamount < 16) {
+                            addImage();
+                            changeButtonText('15 fish unlocks the fish page… ' + countdown + ' left!');
+                        }
                         if (clickamount == 15) {
-                            window.location.href = '/fish.html';}"
-                    >click here for fish :)</button>
+                            changeButtonText('Enter the fish page :D');
+                        }
+                        if (clickamount > 15) {
+                            window.location.href = '/fish.html';
+                        }
+                        "
+                    >click here for fish :D</button>
                     
                     <p><a href="https://github.com/Operating-Potato/Operating-Potato.github.io/tree/main" target="_blank">Source code</a></p>
                 </div>
