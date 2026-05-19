@@ -1,3 +1,7 @@
+:root {
+    --widget-radius: 6px;
+}
+
 .showcase a {
     color: rgb(206, 206, 255);
 }
@@ -15,18 +19,18 @@
     background-color: black;
     display: flex;
     flex-flow: column;
-    padding: 0 10px 0 10px;
+    padding: 0 var(--widget-radius) 0 var(--widget-radius);
     color: white;
     justify-content: center;
     text-align: center;
 }
 .showcase-text.short {
     height:100%;
-    border-radius: 10px 0 0 10px;
+    border-radius: var(--widget-radius) 0 0 var(--widget-radius);
 }
 .showcase-text.tall {
     height:40%;
-    border-radius: 10px 10px 0 0;
+    border-radius: var(--widget-radius) var(--widget-radius) 0 0;
 }
 
 
@@ -40,14 +44,14 @@
     height:100%;
     
     img {
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 var(--widget-radius) var(--widget-radius) 0;
     }
 }
 .showcase-image.tall{
     height:60%;
     width: 100%;
     img {
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 var(--widget-radius) var(--widget-radius);
     }
 }
 
