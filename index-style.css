@@ -189,7 +189,7 @@ a:hover {
     position:static;
 
     animation-name: rotate;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-play-state: running;
