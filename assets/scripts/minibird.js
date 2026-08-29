@@ -8,12 +8,14 @@ for (let fish = 0; fish < 4; fish++) {
 const minibirds = [
     "RBGU.gif",
     "BBMA2.gif",
+    "DCCO.gif"
 ];
 
 //list for links
 const links = [
     "/birds/sp/gulls/RBGU",
     "/birds/sp/crows/BBMA",
+    "/birds/sp/cormorants/DCCO",
 ]
 
 let length = minibirds.length;
