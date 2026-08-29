@@ -8,7 +8,7 @@ for (let fish = 0; fish < 4; fish++) {
 const minibirds = [
     "RBGU.gif",
     "BBMA2.gif",
-    "DCCO.gif"
+    "DCCO.gif",
 ];
 
 //list for links
