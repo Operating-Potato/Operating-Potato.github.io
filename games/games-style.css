@@ -90,11 +90,14 @@ max-width: 1000px;
 
 #scratch {
     background-color:orange;
-    background-image: url(scratch_thumbnail.png);
+    background-image: url(thumbnails/scratch_thumbnail.png);
 }
 
 #gullpics {
     background-image: url(/seagulls/1.jpg);
     background-color:white;
+}
+#rat {
+    background-image: url(thumbnails/rat_thumbnail.png)
 }
 
