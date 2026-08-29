@@ -16,7 +16,7 @@ const links = [
     "/birds/sp/gulls/RBGU",
     "/birds/sp/crows/BBMA",
     "/birds/sp/cormorants/DCCO",
-]
+];
 
 let length = minibirds.length;
 
