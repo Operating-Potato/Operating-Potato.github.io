@@ -98,6 +98,11 @@ max-width: 1000px;
     background-color:white;
 }
 #rat {
-    background-image: url(thumbnails/rat_thumbnail.png)
+    background-image: url(thumbnails/rat_thumbnail.png);
+    background-color: white;
+}
+#useless-button {
+    background-image: url(thumbnails/useless-button-thumbnail.png);
+    background-color: aliceblue;
 }
 
