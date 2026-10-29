@@ -19,3 +19,5 @@ def process(days, full, half, fullhours, halfhours):
 #output
 #concatenates processed inputs and prints result
 print("\n""Based on your inputs, expect a total of " + str(process(total_days, week_full, week_half, full_hours, half_hours)) + " hours in a school year.")
+
+exit() #exit
