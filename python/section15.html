@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Section 15 classwork</title>
+        <link rel="icon" href="https://operating-potato.github.io/assets/favicon.png">
+
+        <style>
+            html, body, button {
+                font-family: sans-serif;
+            }
+            #dButton {
+                display: none;
+
+            }
+            #hehehe {
+                font-family: monospace;
+                color: white;
+                background-image: linear-gradient(rgb(96, 94, 229), rgb(96, 130, 229));
+                border: 2px outset rgb(96, 130, 229) !important;
+                padding: 3px;
+                box-sizing: border-box;
+            }
+            #hehehe:hover {
+                scale: 1.02;
+            }
+            #hehehe:active {
+                scale: 0.95
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>Section 15b - Python IPO</h1>
+            </div>
+            <div class="main">
+                <p>Please enter your initials.</p>
+
+                <form id="input" onsubmit="verify();">
+                    <input type="text" id="initials">
+
+                    <button>submit</button>
+                </form>
+                <p id="message"></p>
+                <!-- download button -->
+                <a id="dButton" href="Ai_Charles_Section15.py" download>
+                    <button id="hehehe" ontouchstart="">Download "Ai_Charles_Section15.py"</button>
+                </a>
+            </div>
+        </div>
+    </body>
+    <script>
+        //constants & variables
+        const message = document.getElementById("message");
+        const button = document.getElementById("dButton");
+        
+        // gets initials from input
+        function getInitials() {
+            var userInput = document.getElementById("initials");
+            var inputInitial = userInput.value;
+            return inputInitial;
+        }
+
+        // checks if inputted initials are NC
+        function verify() {
+            if (getInitials() == "NC" || getInitials() == "nc") {
+                //output
+                console.log("success!");
+                message.innerHTML = "Success!";
+                button.style.display = "block";
+            }
+            else {
+                //output
+                message.innerHTML = "Sorry, you do not have access.";
+                button.style.display = "none";
+            }
+            event.preventDefault(); //prevents stuff from disappearing
+        };
+
+    </script>
+</html>
