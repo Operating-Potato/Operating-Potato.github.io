@@ -203,12 +203,17 @@ a:hover {
 
 
 #gull {
+    display: block;
     width: calc(100% * 3);
     image-rendering: pixelated;
+    padding: 0; margin-bottom: 3px;
+    box-sizing: border-box;
 }
 
 #gull-link {
+    box-sizing: border-box;
+    margin: 0; padding-right: 25%;
     position: absolute;
     bottom: 100%;
-    left: 55%;
+    align-self: flex-end;
 }

@@ -32,7 +32,7 @@ function replaceLink() {
     document.getElementById("gull-link").setAttribute('href', link);
 }
 function replaceImage() {
-    let image = `/birds/assets/minibirds/${minibirds[randomNumber]}`;
+    let image = `https://operating-potato.github.ip/birds/assets/minibirds/${minibirds[randomNumber].gif}`;
     document.getElementById("gull").setAttribute('src', image);
 }
 
