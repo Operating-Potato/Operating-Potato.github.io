@@ -4,18 +4,11 @@ for (let fish = 0; fish < 4; fish++) {
     console.log(`fish ${fish}`);
 }
 
-//list for minibird images
+//list of available minibirds
 const minibirds = [
-    "RBGU.gif",
-    "BBMA2.gif",
-    "DCCO2.gif",
-];
-
-//list for links
-const links = [
-    "/birds/sp/gulls/RBGU",
-    "/birds/sp/crows/BBMA",
-    "/birds/sp/cormorants/DCCO",
+    "RBGU",
+    "BBMA2",
+    "DCCO2",
 ];
 
 let length = minibirds.length;
@@ -28,11 +21,11 @@ let randomNumber = randomNumberUpTo(length);
 
 //replace link
 function replaceLink() {
-    let link = links[randomNumber];
+    let link = "/birds/sp/" + minibirds[randomNumber].slice(0, 4);
     document.getElementById("gull-link").setAttribute('href', link);
 }
 function replaceImage() {
-    let image = `https://operating-potato.github.io/birds/assets/minibirds/${minibirds[randomNumber]}`;
+    let image = "https://operating-potato.github.io/birds/assets/minibirds/" + minibirds[randomNumber] + ".gif";
     document.getElementById("gull").setAttribute('src', image);
 }
 
