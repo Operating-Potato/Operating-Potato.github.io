@@ -5,7 +5,7 @@
     --sidebar-gradient: linear-gradient(rgba(230,230,230,0.5), rgba(150,150,150,0.5));
     --text-colour: rgb(50,50,50);
     --title-colour: blue;
-    --sidebar-border-radius: 0 20px 20px 0;
+    --sidebar-border-radius: 12px;
 }
 
 
@@ -45,7 +45,7 @@
 
     backdrop-filter: blur(5px);
     box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
-    border-radius: var(--sidebar-border-radius);
+    border-radius: 0 var(--sidebar-border-radius) var(--sidebar-border-radius) 0;
     font-family: "Noto Sans Mono" !important;
     font-size: 12px;
 
@@ -59,7 +59,7 @@
     top:0;
     width:200px;
     height: 100%;
-    border-radius: var(--sidebar-border-radius);
+    border-radius: 0 var(--sidebar-border-radius) var(--sidebar-border-radius) 0;
     overflow-y: auto;
 }
 
@@ -124,7 +124,7 @@ a.navlink {
         width:100%;
         height:55px;
         overflow-x: scroll;
-        border-radius: 20px 20px 0 0;
+        border-radius: var(--sidebar-border-radius) var(--sidebar-border-radius) 0 0;
         margin:0;
     }
     .navbar {
