@@ -138,11 +138,12 @@ a.navlink {
         width:100% !important;
         display: flex;
         flex-flow: row;
-        justify-content: center;
+        justify-content: flex-start;
         padding-bottom: 0;
     }
     .navlink {
         width: 20%;
+        min-width: fit-content;
     }
     .box {
         width: 100%;
