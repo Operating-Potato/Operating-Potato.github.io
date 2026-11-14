@@ -1,9 +1,8 @@
+@import url(universal.css);
+
 #home {
+    background-color: black;
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        var(--thumbshade-active), 
         url("/assets/navbar/home_navbar.png");
-    background-size: cover;
-    background-color: white;
-    background-position: center;
-    color: white;
 }

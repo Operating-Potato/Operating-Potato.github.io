@@ -1,10 +1,7 @@
-
+@import url("universal.css");
 #games {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        var(--thumbshade-active), 
         url("/assets/navbar/games_navbar.png");
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: black;
 }

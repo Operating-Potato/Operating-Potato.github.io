@@ -1,0 +1,12 @@
+.box {
+    --thumbshade-active: linear-gradient(to right, rgba(0,0,0,.6) 20%, transparent);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+@media only screen and (max-width: 720px) {
+    .box {
+        --thumbshade-active: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5))
+    }
+}

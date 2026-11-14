@@ -1,9 +1,7 @@
+@import url("universal.css");
 #photos {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        var(--thumbshade-active), 
         url("/assets/navbar/photos_navbar.jpg");
-    background-size: cover;
-    background-color: white;
-    background-position: center;
-    color: white;
+    background-color: black;
 }
