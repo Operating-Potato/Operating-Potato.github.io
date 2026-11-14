@@ -1,9 +1,0 @@
-#article {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url("/assets/navbar/articles_navbar.png");
-    background-size: cover;
-    background-position: center;
-    background-color: white;
-    color: white;
-}
