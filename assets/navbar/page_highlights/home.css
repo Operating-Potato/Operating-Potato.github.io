@@ -5,4 +5,5 @@
     background-image: 
         var(--thumbshade-active), 
         url("/assets/navbar/home_navbar.png");
+        color: white;
 }
