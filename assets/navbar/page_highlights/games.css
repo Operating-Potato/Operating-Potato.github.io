@@ -4,4 +4,5 @@
         var(--thumbshade-active), 
         url("/assets/navbar/games_navbar.png");
     background-color: black;
+    color: white;
 }
