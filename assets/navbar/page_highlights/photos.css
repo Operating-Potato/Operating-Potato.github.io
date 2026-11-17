@@ -4,4 +4,5 @@
         var(--thumbshade-active), 
         url("/assets/navbar/photos_navbar.jpg");
     background-color: black;
+    color: white;
 }
