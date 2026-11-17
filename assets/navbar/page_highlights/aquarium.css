@@ -4,5 +4,6 @@
         var(--thumbshade-active), 
         url("/assets/navbar/aquarium_navbar.png");
     background-color: black;
+    color: white;
 }
 
